@@ -56,6 +56,7 @@ class CartProductTest {
 
     @Test
     void theTest3() {
+        //https://www.hackerrank.com/challenges/java-string-compare/problem?isFullScreen=false
         CartProduct cartProduct = new CartProduct();
 
         String s = "aaaaaaaaabaa";
@@ -80,6 +81,21 @@ class CartProductTest {
         System.out.println(list.get(0));
         System.out.println("Shreya");
         System.out.println(list.get(list.size()-1));
+    }
+
+
+    @Test
+    void theTest4() {
+        // https://www.hackerrank.com/challenges/java-loops/problem?isFullScreen=false
+
+
+    }
+
+    @Test
+    void theTest5() {
+        // https://www.hackerrank.com/challenges/java-strings-introduction/problem?isFullScreen=false
+
+
     }
 }
 
