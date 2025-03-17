@@ -69,12 +69,12 @@ class CartProductTest {
         List<String> list = new ArrayList<>();
         for (int i=0; i+k <= sLen ; i++){
             String subStr = s.substring( i, i + k);
-            if (smallest > subStr) {
-                smallest = subStr;
-            }
-            if (largest < subStr) {
-                largest = subStr;
-            }
+//            if (smallest > subStr) {
+//                smallest = subStr;
+//            }
+//            if (largest < subStr) {
+//                largest = subStr;
+//            }
         }
         Collections.sort(list);
         System.out.println(list.get(0));
