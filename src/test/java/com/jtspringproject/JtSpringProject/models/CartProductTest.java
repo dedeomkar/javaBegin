@@ -59,28 +59,20 @@ class CartProductTest {
         //https://www.hackerrank.com/challenges/java-string-compare/problem?isFullScreen=false
         CartProduct cartProduct = new CartProduct();
 
-        String s = "aaaaaaaaabaa";
-        int k = 1;
-
+        String s = "welcometojava";
+        int k = 3;
         int sLen = s.length();
 
-        String smallest = s.substring( 0, k);
-        String largest = s.substring( 0, k);
-
-        List<String> list = new ArrayList<>();
-        for (int i=0; i+k <= sLen ; i++){
-            String subStr = s.substring( i, i + k);
-//            if (smallest > subStr) {
-//                smallest = subStr;
-//            }
-//            if (largest < subStr) {
-//                largest = subStr;
-//            }
+        String smallest = s.substring(0, k);
+        String largest = s.substring(0, k);
+        for (int i=0; i+k <= sLen ; i++) {
+            String subStr = s.substring(i, i + k);
+            if (smallest.compareTo(subStr) > 0)
+                smallest = subStr;
+            if (largest.compareTo(subStr) < 0)
+                largest = subStr;
         }
-        Collections.sort(list);
-        System.out.println(list.get(0));
-        System.out.println("Shreya");
-        System.out.println(list.get(list.size()-1));
+        System.out.println("The smallest Lexicographically formed substring from welcometojava is : " + smallest +" \n"+ "The largest Lexicographically formed substring from welcometojava is : " + largest);
     }
 
 
