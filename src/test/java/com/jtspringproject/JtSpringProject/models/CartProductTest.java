@@ -79,9 +79,19 @@ class CartProductTest {
     @Test
     void theTest4() {
         // https://www.hackerrank.com/challenges/java-loops/problem?isFullScreen=false
-
-
+        int a = 5;
+        int b = 3;
+        int n = 5;
+        int q = 2;
+        int sum = a;
+        for(int i = 0; i < n; i++){
+            sum += (int)Math.pow(2, i) * b;
+            System.out.print(sum + " ");
+        }
+        System.out.println();
     }
+
+
 
     @Test
     void theTest5() {
