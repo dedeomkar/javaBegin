@@ -2,10 +2,6 @@ package com.jtspringproject.JtSpringProject.models;
 
 import org.junit.jupiter.api.Test;
 
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.List;
-
 class CartProductTest {
 
     @Test
@@ -94,12 +90,32 @@ class CartProductTest {
 
 
     @Test
-    void theTest5() {
+    public void theTest5() {
         // https://www.hackerrank.com/challenges/java-strings-introduction/problem?isFullScreen=false
-
-
+        String one = "cat";
+        String two = "car";
+        System.out.println(one.length() + two.length());
+        int result = one.compareTo(two);
+        if (result <= 0){
+            System.out.println("No");
+        } else if (result > 0) {
+            System.out.println("Yes");
+        }else {
+            System.out.println("hello is equal to java");
+        }
+        System.out.println(Character.toUpperCase(one.charAt(0)) + one.substring(1) + " " + Character.toUpperCase(two.charAt(0)) + two.substring(1));
     }
+
+//    public static String capitalizeFirstLetter(String str) {
+//        if (str == null || str.isEmpty()) {
+//            return str;  // Return original if it's null or empty
+//        }
+//        return Character.toUpperCase(str.charAt(0)) + str.substring(1);
+//    }
 }
+
+
+
 
 
 
