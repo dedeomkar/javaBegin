@@ -1,6 +1,9 @@
 package com.jtspringproject.JtSpringProject.models;
 
 import org.junit.jupiter.api.Test;
+import org.apache.commons.lang3.StringUtils;
+
+import java.lang.reflect.Array;
 
 class CartProductTest {
 
@@ -114,8 +117,33 @@ class CartProductTest {
 
 
     @Test
-    public void theTest6() {
-        // https://www.hackerrank.com/challenges/java-anagrams/problem?isFullScreen=false
+    public void theTest6(){
+    //    https://www.hackerrank.com/challenges/java-string-reverse/problem?isFullScreen=false
+        String A = "madam";
+        char Arr = A.charAt(0);
+        String B = StringUtils.reverse(A);
+        Boolean T = true;
+
+        for (int i = 0; i < A.length(); i++) {
+            if (A.charAt(i) == B.charAt(i)) {
+                T = true;
+            } else {
+                T = false;
+            }
+        }
+        if (T) {
+            System.out.println("Yes");
+        } else {
+            System.out.println("No");
+        }
+
+//        A.chars().forEach(i -> System.out.println((char)i));
+//        for(char i = 0; i < A.length(); i++){
+//            if(Character.isLetterOrDigit(i)){
+//                Arr.
+//            }
+//        }
+
 
     }
 
